@@ -1,18 +1,59 @@
+// =====================
+// WELCOME MESSAGE
+// =====================
+
 // Call the welcomeMessage function when the script loads
 welcomeMessage();
 
 function welcomeMessage() {
-    // Prompt the user for their name
     let userResponse = prompt("What is your name?");
 
-    // If userResponse is null or empty, set a default name
     if (userResponse === null || userResponse.trim() === "") {
         userResponse = "Guest";
     }
 
-    // Display the welcome message in the element with id "welcome-speech"
-    document.getElementById("welcome-speech").innerText = `Welcome, ${userResponse}! to Yama Website.`;
+    document.getElementById("welcome-speech").innerText =
+        `Welcome, ${userResponse}! to My Website.`;
 }
 
-// Placeholder for form validation function
-function validateForm() { }
+
+// =====================
+// MESSAGE US OUTPUT
+// =====================
+
+function showMessage() {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const pesan = document.getElementById("pesan").value;
+    const gender = document.querySelector('input[name="gender"]:checked');
+
+    if (name === "" || email === "" || pesan === "") {
+        alert("Mohon lengkapi semua data!");
+        return;
+    }
+
+    if (!gender) {
+        alert("Pilih jenis kelamin terlebih dahulu!");
+        return;
+    }
+
+    document.getElementById("outName").innerText = name;
+    document.getElementById("outEmail").innerText = email;
+    document.getElementById("outGender").innerText = gender.value;
+    document.getElementById("outPesan").innerText = pesan;
+}
+function clearForm() {
+    // Clear input form
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("pesan").value = "";
+
+    const gender = document.querySelectorAll('input[name="gender"]');
+    gender.forEach(radio => radio.checked = false);
+
+    // Clear output
+    document.getElementById("outName").innerText = "";
+    document.getElementById("outEmail").innerText = "";
+    document.getElementById("outGender").innerText = "";
+    document.getElementById("outPesan").innerText = "";
+}

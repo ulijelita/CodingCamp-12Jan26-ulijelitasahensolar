@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Yama</title>
+    <title>Portfolio Uli Jelita Sahensolar</title>
 
     <!-- CSS External -->
     <link rel="stylesheet" href="css/style.css">
@@ -18,15 +18,18 @@
     <!-- Header Content -->
     <header class="main-header p-[8px]">
         <!-- Logo -->
-        <div class="logo"></div>
-
+        <div class="logo">
+            <span>UJS</span>
+        </div>
+        
         <!-- Navigation Menu -->
-        <nav class="flex">
-            <a class="border p-2 rounded" href="#home-page">Home</a>
-            <a class="border p-2 rounded" href="#portfolio-page">Portfolio</a>
-            <a class="border p-2 rounded" href="#our-profile-page">Our Profile</a>
-            <a class="border p-2 rounded" href="#message-us-page">Message Us</a>
+        <nav class="flex gap-2">
+            <a class="px-4 py-2 rounded bg-green-500 text-white hover:bg-green-600 transition" href="#home-page">Home</a>
+            <a class="px-4 py-2 rounded bg-purple-500 text-white hover:bg-purple-600 transition" href="#our-profile-page">Our Profile</a>
+            <a class="px-4 py-2 rounded bg-orange-500 text-white hover:bg-orange-600 transition" href="#portofolio-page">Portofolio</a>
+            <a class="px-4 py-2 rounded bg-pink-500 text-white hover:bg-pink-600 transition" href="#message-us-page">Message Us</a>
         </nav>
+        
     </header>
 
     <hr />
@@ -36,57 +39,154 @@
         <!-- Home Page -->
         <section id="home-page" class="min-h-[500px] text-center content-center">
             <h2 class="text-xl font-bold" id="welcome-speech">Welcome to Our Website</h2>
-            <p class="mt-2">We are glad to have you here. Explore our services and offerings.</p>
-        </section>
-
-        <hr />
-
-        <!-- Portfolio Page -->
-        <section id="portfolio-page" class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold">Our Portfolio</h2>
-            <p class="mt-2">Take a look at our diverse range of projects that showcase our skills and expertise.</p>
+            <p class="mt-2">Website ini, menjelaskan sedikit tentang diri saya. <br> Anda akan mengetahui informasi apa saja tentang diri saya, melalui website ini. </p>
         </section>
 
         <hr />
 
         <!-- Our Profile Page -->
-        <section id="our-profile-page" class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold">About Yama Company</h2>
-            <p class="mt-2">Yama Company is dedicated to providing top-notch services in various domains.</p>
+        <section id="our-profile-page" class="min-h-[500px] mx-8">
+            <h2 class="text-xl font-bold">Personal Data</h2>
+            <p class="mt-2">Saya Lahir di Jayapura, Papua <br> Tanggal 5 April 2003 <br> Alamat Tempat Tinggal Saya di Trikora, Jayapura Utara, KOTA JAYAPURA, PAPUA JL.PERWAKIN NO.17 DOK V ATAS 
+            <br> No Hp 081240625863
+            <br> Email ulisahensolar@gmail.com
+            <br>
+            <br> Pendidikan Saya
+            <br> SD YPK Paulus
+            <br> SMP YPK Paulus
+            <br> SMKN 1 Pariwisata Jayapura
+            <br> Universitas Cenderawasih </p>
         </section>
 
         <hr />
+
+        <!-- Portfolio Page -->
+        <section id="portofolio-page" class="min-h-[500px] mx-8">
+            <h2 class="text-xl font-bold">About Me</h2>
+            <p class="mt-2">Saya merupakan Lulusan dari Universitas Cenderawasih Jayapura, Papua, tahun 2025 dengan menyandang gelar S.Kom. Saya mampu menyesuaikan diri dengan lingkungan baru, dapat bekerja sama dalam tim, mempelajari hal baru, serta memiliki kemauan kuat  untuk terus berkembang. Saya memiliki minat dalam bidang teknologi informasi, saya dapat mengoperasikan komputer, membuat laporan, membuat surat, menggunakan beberapa perangkat lunak seperti Microsoft Office (Word, Excel dan Powerpoint). Dengan kemampuan tersebut, saya berkomitmen untuk meningkatkan kualitas diri dan memberikan kontribusi terbaik pada setiap kesempatan yang diberikan.
+            <br>
+                <br>Keahlian :
+                <br> 1. UI/UX Design 
+                <br> 2. MS. Office
+                <br> 3. Problem Solving
+                <br> 4. Management Waktu
+                <br> 5. Berkomunikasi </p>
+
+                <br>Hobby :
+                <br> 1. Membaca 
+                <br> 2. Memasak
+                <br> 3. Jalan-jalan
+                <br> 4. Mempelajari Teknologi Baru
+                <br> 5. Memanfaatkan Teknologi
+                <br> 6. Mencoba Hal-hal Baru </p>
+        </section>
+
+        <hr />
+
+        
 
         <!-- Message Us Page -->
         <section id="message-us-page" class="min-h-[500px] mx-8">
             <header>
                 <h2 class="text-xl font-bold">Message Us</h2>
-                <p class="mt-2">Have questions or want to work with us? Send us a message and we'll get back to you
-                    promptly.</p>
+                <p class="mt-2">Have questions with us? Send us a message and we'll get back to you promptly.</p>
             </header>
 
-            <form>
-                <div class="mb-4">
-                    <label class="block mb-2" for="name">Name:</label>
-                    <input class="w-full p-2 border rounded" type="text" id="name" name="name" required />
+            <div class="grid grid-cols-2 gap-8 mt-6">
+
+        <!-- FORM -->
+        <form id="messageForm" class="space-y-4">
+
+            <!-- Nama -->
+            <div class="grid grid-cols-4 gap-2 items-center">
+                <label class="font-medium">Nama</label>
+                <input class="col-span-2 p-2 border rounded" type="text" id="name" required>
+            </div>
+
+            <!-- Email -->
+            <div class="grid grid-cols-4 gap-2 items-center">
+                <label class="font-medium">Email</label>
+                <input class="col-span-2 p-2 border rounded" type="email" id="email" required>
+            </div>
+
+            <!-- Jenis Kelamin -->
+            <div class="grid grid-cols-4 gap-2 items-center">
+                <label class="font-medium">Jenis Kelamin</label>
+                <div class="col-span-2 flex gap-6">
+                    <label>
+                        <input type="radio" name="gender" value="Laki-laki" required> Laki-laki
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="Perempuan"> Perempuan
+                    </label>
                 </div>
-                <div class="mb-4">
-                    <label class="block mb-2" for="email">Email:</label>
-                    <input class="w-full p-2 border rounded" type="email" id="email" name="email" required />
-                </div>
-                <div class="mb-4">
-                    <label class="block mb-2" for="message">Message:</label>
-                    <textarea class="w-full p-2 border rounded" id="message" name="message" rows="5"
-                        required></textarea>
-                </div>
-                <button class="px-4 py-2 bg-blue-500 text-white rounded" type="button">Send Message</button>
-            </form>
+            </div>
+
+            <!-- Pesan -->
+            <div class="grid grid-cols-4 gap-3 items-start">
+                <label class="font-medium">Pesan</label>
+                <textarea class="col-span-2 p-2 border rounded" id="pesan" rows="5" required></textarea>
+            </div>
+
+            <!-- Button -->
+            <div class="grid grid-cols-6 gap-2">
+                <div></div>
+                <button
+                    type="button"
+                    onclick="showMessage()"
+                    class="col-start-3 col-span-2 px-4 py-2 bg-blue-500 text-white rounded"
+                >
+                    Send Message
+                </button>
+            <!-- Delete -->
+                <button
+                type="button"
+                onclick="clearForm()"
+                class="col-start-3 col-span-2 px-4 py-2 bg-red-500 text-white rounded"
+            >
+                Delete
+            </button>
+            </div>
+
+        </form>
+
+        <!-- OUTPUT -->
+    <div class="border rounded p-4 bg-gray-50 space-y-4">
+    
+        <!-- Nama -->
+        <div class="grid grid-cols-4 gap-2 items-center">
+            <label class="font-medium">Nama</label>
+            <div class="col-span-2 p-2 border rounded bg-white" id="outName"></div>
+        </div>
+
+        <!-- Email -->
+        <div class="grid grid-cols-4 gap-2 items-center">
+            <label class="font-medium">Email</label>
+            <div class="col-span-2 p-2 border rounded bg-white" id="outEmail"></div>
+        </div>
+
+        <!-- Jenis Kelamin -->
+        <div class="grid grid-cols-4 gap-2 items-center">
+            <label class="font-medium">Jenis Kelamin</label>
+            <div class="col-span-2 p-2 border rounded bg-white" id="outGender"></div>
+        </div>
+
+        <!-- Pesan -->
+        <div class="grid grid-cols-4 gap-3 items-start">
+            <label class="font-medium">Pesan</label>
+            <div
+                class="col-span-2 p-2 border rounded bg-white min-h-[120px]"
+                id="outPesan"
+            ></div>
+        </div>
+    </div>
+   
         </section>
     </main>
 
     <!-- Footer Content -->
     <footer>
-        <p class="text-center p-4 bg-gray-200">© 2026 Yama Company. All rights reserved.</p>
+        <p class="text-center p-4 bg-gray-200">© Copyright by Uli Jelita Sahensolar</p>
     </footer>
 
     <!-- Javascript External -->
